@@ -1,5 +1,54 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title} nothing
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid.navigation
+            .col-sm-6
+                a(href='/')
+                    //img(style='width:100px' src='http://woozle.org/neale/misc/chupas-logo.png')
+                    img(src='images/dc_roasters_200x124_lt.png')
+            .col-sm-6.nav-buttons
+                button.btn.btn-primary(type='submit') Log-In
+                button.btn.btn-primary(type='submit') Register
+                                
+    .container-fluid.main-content
+        .row.content1.verbiage1
+            .col-sm-12
+                h1 A better way to grind
+                h4 Freshly roasted coffee beans delivered weekly to your door.
+                
+        .row.content2.gradient1.verbiage1
+            .col-sm-12
+                p How It Works
+            .col-sm12.arrow-holder
+                .arrow-down
+                
+        .row.content3.verbiage2
+            #step-one.col-sm-12.step
+                h2.title 1. We get the coffee
+                p Each bean is hand selected
+                p Each bean is measured for precise size
+                p Each bean is tenderly caressed
+            #triangle-down
+            #triangle-topright
+                
+                
+        .row.content4.gradient1.verbiage1
+            #step-two.col-sm-12.step
+                h3 We pick-up the coffee
+                p We place the coffee in bags
+                p Each bag is transported in climate-controlled trucks
+                p Every six hours the bags are rotated to keep the beans uniform and delicious
+            .col-sm-12.arrow-holder
+                .arrow-down
+                
+        .row.content5.verbiage2
+            #step-three.col-sm-12.steps
+                h3 3. You drink the coffee
+                p the coffe taste delicious
+                p you want more coffee!!
+                
+        .row
+            #get-started.col-sm-12
+                a(href="/register")
+                    button.btn.btn-primary(type="button") Get Started

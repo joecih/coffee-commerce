@@ -1,8 +1,131 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* line 1, ../../_tools/compass/sass/_base.scss */
+html, body {
+  overflow: hidden;
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+/* line 5, ../../_tools/compass/sass/_base.scss */
+img {
+  width: 100px;
+  position: absolute;
+  top: 8px;
+}
+
+/* line 2, ../../_tools/compass/sass/_home.scss */
+.navigation {
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 1px 1px 3px black;
+}
+
+/* line 7, ../../_tools/compass/sass/_home.scss */
+.navbar {
+  background-color: #284741;
+}
+
+/* line 10, ../../_tools/compass/sass/_home.scss */
+.nav-buttons {
+  text-align: right;
+}
+
+/* line 13, ../../_tools/compass/sass/_home.scss */
+.main-content {
+  position: relative;
+  top: 80px;
+  font-family: Dosis, 'Indie Flower', Oswald, verdana, arial;
+}
+
+/* line 19, ../../_tools/compass/sass/_home.scss */
+.content1,
+.content3,
+.content4,
+.content5 {
+  height: 200px;
+}
+
+/* line 25, ../../_tools/compass/sass/_home.scss */
+.verbiage1 {
+  color: #414f20;
+}
+
+/* line 28, ../../_tools/compass/sass/_home.scss */
+.verbiage2 {
+  color: white;
+}
+
+/* line 32, ../../_tools/compass/sass/_home.scss */
+.content1 {
+  background-color: #f5f5dc;
+  background-image: url("../images/coffee.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+/* line 38, ../../_tools/compass/sass/_home.scss */
+.content2 {
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-family: fantasy;
+  font-size: 25px;
+}
+
+/* line 45, ../../_tools/compass/sass/_home.scss */
+.content3 {
+  position: relative;
+  background-image: url("../images/CoffeeBags.jpg");
+}
+
+/* line 52, ../../_tools/compass/sass/_home.scss */
+.content5 {
+  background-image: url("../images/cupSteam.jpg");
+}
+
+/* line 55, ../../_tools/compass/sass/_home.scss */
+.gradient1 {
+  background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(transparent), to(lightgray));
+  background: -webkit-radial-gradient(circle, transparent, lightgray);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -moz-radial-gradient(circle, transparent, lightgray);
+  /* Firefox 3.6+ */
+  background: -ms-radial-gradient(circle, transparent, lightgray);
+  /* IE 10 */
+}
+
+/* line 68, ../../_tools/compass/sass/_home.scss */
+#triangle-down {
+  position: absolute;
+  left: 48%;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid white;
+  z-index: 1;
+}
+
+/* line 78, ../../_tools/compass/sass/_home.scss */
+#triangle-topright {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  border-top: 32px solid lightgray;
+  border-left: 20px solid transparent;
+}
+
+/* line 86, ../../_tools/compass/sass/_home.scss */
+#triangle-toprleft {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-top: 32px solid lightgray;
+  border-left: 20px solid transparent;
 }
