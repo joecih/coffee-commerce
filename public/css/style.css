@@ -11,6 +11,16 @@ img {
   top: 8px;
 }
 
+/* line 10, ../../_tools/compass/sass/_base.scss */
+a {
+  color: rgba(0, 51, 0, 0.6);
+}
+
+/* line 13, ../../_tools/compass/sass/_base.scss */
+a:hover {
+  color: rgba(0, 51, 0, 0.8);
+}
+
 /* line 1, ../../_tools/compass/sass/_nav.scss */
 .navigation {
   height: 80px;
@@ -28,25 +38,54 @@ img {
   text-align: right;
 }
 
+/* line 12, ../../_tools/compass/sass/_nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 15, ../../_tools/compass/sass/_nav.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  /* line 21, ../../_tools/compass/sass/_nav.scss */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  /* line 26, ../../_tools/compass/sass/_nav.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+/* line 31, ../../_tools/compass/sass/_nav.scss */
+#options-nav {
+  font-size: 32px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+/* line 35, ../../_tools/compass/sass/_nav.scss */
+#options-nav span {
+  font-size: 20px;
+  padding-left: 8px;
+  font-family: monospace;
+}
+
 /* line 2, ../../_tools/compass/sass/_home.scss */
 .main-content {
   position: relative;
-  top: 10%;
+  top: 100px;
   width: 100vw;
-  height: 90%;
+  height: auto;
   font-family: Dosis, 'Indie Flower', Oswald, verdana, arial;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* line 18, ../../_tools/compass/sass/_home.scss */
 .main-verbiage h3 {
   padding-left: 5%;
-}
-
-/* line 22, ../../_tools/compass/sass/_home.scss */
-.verbiage1,
-.verbiage2 {
-  font-size: 20px;
 }
 
 /* line 27, ../../_tools/compass/sass/_home.scss */

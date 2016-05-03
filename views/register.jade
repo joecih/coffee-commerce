@@ -2,12 +2,14 @@ extends layout
 
 block content
     .container-fluid.main-content.gradient1
-        .row
+        .row-fluid
             .col-sm-12.text-center
-                h1 Registration
-                h4 Pick a username and password
+                h1 User Registration
+                h4 Please enter your credentials.
                 
-        .row
+        .row-fluid
+            if(failure)
+                h2 You must enter the same password in both fields
             .col-sm-12.registration-wrapper.text-center
                 form(role="form", action="/register", method="post", id="registration-form", name="registration")
                     .form-group
