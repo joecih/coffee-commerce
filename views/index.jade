@@ -1,50 +1,35 @@
 extends layout
 
 block content
-    nav.navbar.navbar-default.navbar-fixed-top
-        .container-fluid.navigation
-            .col-sm-6
-                a(href='/')
-                    //img(style='width:100px' src='http://woozle.org/neale/misc/chupas-logo.png')
-                    img(src='images/dc_roasters_200x124_lt.png')
-            .col-sm-6.nav-buttons
-                button.btn.btn-primary(type='submit') Log-In
-                button.btn.btn-primary(type='submit') Register
                                 
-    .container-fluid.main-content
-        .row.content1.verbiage1
+    .container-fluid.main-content.gradient1
+        .row.content1.main-verbiage
             .col-sm-12
                 h1 A better way to grind
-                h4 Freshly roasted coffee beans delivered weekly to your door.
-                
-        .row.content2.gradient1.verbiage1
+                h3 Freshly roasted coffee beans delivered weekly to your door.
+        .row.content2.verbiage1
             .col-sm-12
                 p How It Works
-            .col-sm12.arrow-holder
-                .arrow-down
-                
-        .row.content3.verbiage2
+    
+        .row.content3.verbiage2.wrap
             #step-one.col-sm-12.step
-                h2.title 1. We get the coffee
+                h1.title 1. We get the coffee
                 p Each bean is hand selected
                 p Each bean is measured for precise size
                 p Each bean is tenderly caressed
-            #triangle-down
-            #triangle-topright
-                
-                
-        .row.content4.gradient1.verbiage1
+            
+        .row.content4.verbiage1.wrap
             #step-two.col-sm-12.step
-                h3 We pick-up the coffee
+                h1 We pick-up the coffee
                 p We place the coffee in bags
                 p Each bag is transported in climate-controlled trucks
                 p Every six hours the bags are rotated to keep the beans uniform and delicious
-            .col-sm-12.arrow-holder
-                .arrow-down
+            //- .col-sm-12.arrow-holder
+            //-     .arrow-down
                 
-        .row.content5.verbiage2
-            #step-three.col-sm-12.steps
-                h3 3. You drink the coffee
+        .row.content5.verbiage2.wrap
+            #step-three.col-sm-12.step
+                h1 3. You drink the coffee
                 p the coffe taste delicious
                 p you want more coffee!!
                 

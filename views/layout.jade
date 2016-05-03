@@ -2,12 +2,24 @@ doctype html
 html
   head
     title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
     link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Oswald|Indie+Flower|Dosis")
     link(rel='stylesheet', href='/css/style.css')
   body
     block content
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid.navigation
+            .col-sm-6
+                a(href='/')
+                    //img(style='width:100px' src='http://woozle.org/neale/misc/chupas-logo.png')
+                    img.img-responsive(src='images/dc_roasters_200x124_lt.png')
+            .col-sm-6.nav-buttons
+                button.btn.btn-primary(type='submit') Log-In
+                a(href='/register')
+                    button.btn.btn-primary(type='submit') Register
+    
     .footer
         p &copy 2015 DigitalCrafts Java House
     

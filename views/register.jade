@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .container-fluid.main-content.gradient1
+        .row
+            .col-sm-12.text-center
+                h1 Registration
+                h4 Pick a username and password
+                
+        .row
+            .col-sm-12.registration-wrapper.text-center
+                form(role="form", action="/register", method="post", id="registration-form", name="registration")
+                    .form-group
+                        label Username:
+                        input.form-control(type="text", name="username", placeholder="Joe", minLength="5")
+                    .form-group
+                        label Password:
+                        input.form-control(type="password", name="password", placeholder="6 character minimum", minLength="6")
+                    .form-group
+                        input.form-control(type="password", name="password2", placeholder="Confirm Password", minLength="6")
+                    .form-group
+                        input.form-control(type="email", name="email", placeholder="email@email.com")
+                    .button-holder
+                        button.btn.btn-success(type="submit") Register
